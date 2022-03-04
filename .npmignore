@@ -3,4 +3,20 @@ ios
 android
 App.tsx
 stories
+__tests__
+.buckconfig
+.eslintrc.js
+.prettierrc.js
+.ruby-version
+.watchmanconfig
+Gemfile
+Gemfile.lock
+app.json
+babel.config.js
+metro.config.js
+rollup.config.js
+yarn-error.log
+tsconfig.json
+src
+index.js
 
