@@ -23,7 +23,13 @@ const theme = {
   },
 }
 
+const a = 'click'
+const b = 'clicked'
+
 const App = () => {
+  const [text, setText] = React.useState(true)
+
+  const toggle = () => setText(prev => !prev)
   const isDarkMode = useColorScheme() === 'dark'
 
   const backgroundStyle = {
@@ -35,7 +41,7 @@ const App = () => {
       <SafeAreaView style={backgroundStyle}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
         <Text underline>Yoooo</Text>
-        <Button text="Register Now" onPress={() => null} />
+        <Button text={text ? a : b} onPress={toggle} />
       </SafeAreaView>
     </NativeBaseProvider>
   )
