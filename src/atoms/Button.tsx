@@ -1,6 +1,6 @@
 import React from 'react'
 import { TouchableOpacity } from 'react-native'
-import { Button as NBButton, Pressable, IButtonProps } from 'native-base'
+import { Pressable } from 'native-base'
 
 import Text from './Text'
 
@@ -9,7 +9,6 @@ import type { ReactNode } from 'react'
 type Props = {
   onPress: () => void
   variant?: 'info' | 'success' | 'light'
-  children: string
   text: string | ReactNode
   shadow?: boolean
 }

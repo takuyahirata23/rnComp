@@ -1,6 +1,6 @@
 {
   "name": "rncomp",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "main": "lib/cjs/index.js",
   "module": "lib/esm/index.js",
   "types": "lib/index.d.ts",
@@ -15,7 +15,8 @@
     "build": "rollup -c"
   },
   "dependencies": {
-    "native-base": "^3.3.7"
+    "native-base": "^3.3.7",
+    "react-native-svg": "^12.3.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
