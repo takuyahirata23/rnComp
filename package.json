@@ -14,6 +14,9 @@
     "build-storybook": "build-storybook",
     "build": "rollup -c"
   },
+  "dependencies": {
+    "native-base": "^3.3.7"
+  },
   "devDependencies": {
     "@babel/core": "^7.12.9",
     "@babel/runtime": "^7.12.5",
@@ -42,6 +45,7 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-native": "^0.67.3",
+    "react-native-safe-area-context": "^4.1.2",
     "react-native-web": "^0.17.7",
     "react-test-renderer": "17.0.2",
     "rollup": "^2.69.1",
@@ -52,7 +56,8 @@
   },
   "peerDependencies": {
     "react": "17.0.2",
-    "react-native": "0.67.3"
+    "react-native": "0.67.3",
+    "react-native-web": "^0.17.7"
   },
   "resolutions": {
     "@types/react": "^17"
