@@ -23,23 +23,23 @@ const Template: ComponentStory<typeof Button> = args =>
 export const Info = Template.bind({})
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
 Info.args = {
-  text: 'REGISTER NOW',
+  children: 'REGISTER NOW',
 }
 
 export const InfoWithShadow = Template.bind({})
 InfoWithShadow.args = {
-  text: 'REGISTER NOW',
+  children: 'REGISTER NOW',
   shadow: true,
 }
 
 export const Success = Template.bind({})
 Success.args = {
-  text: 'SUCCESS!',
+  children: 'SUCCESS!',
   variant: 'success',
 }
 
 export const Light = Template.bind({})
 Light.args = {
-  text: 'Cancel',
+  children: 'Cancel',
   variant: 'light',
 }
