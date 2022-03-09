@@ -20,7 +20,7 @@ const theme = {
   },
 }
 
-const withProvider = (Component: any) => (props: { [key: string]: unknown }) =>
+const withProvider = (Component: any) => (props: unknown) =>
   (
     <NativeBaseProvider theme={theme}>
       <Component {...props} />
