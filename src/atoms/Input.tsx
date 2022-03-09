@@ -20,6 +20,7 @@ export default function Input({
       <RBInput
         placeholder={placeholder.concat(isRequired ? '*' : '')}
         isRequired={isRequired}
+        borderColor={error ? 'danger.500' : undefined}
         {...rest}
       />
       {error && (
