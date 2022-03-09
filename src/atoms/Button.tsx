@@ -3,12 +3,10 @@ import { Pressable } from 'native-base'
 
 import Text from './Text'
 
-import type { ReactNode } from 'react'
-
 type Props = {
   onPress: () => void
   variant?: 'info' | 'success' | 'light'
-  text: string | ReactNode
+  children: string
   shadow?: boolean
 }
 
@@ -21,7 +19,7 @@ const textColor = {
 export default function Button({
   onPress,
   variant = 'info',
-  text,
+  children,
   shadow,
 }: Props) {
   return (
@@ -36,7 +34,7 @@ export default function Button({
       onPress={onPress}
     >
       <Text color={textColor[variant]} fontWeight="bold" textAlign="center">
-        {text}
+        {children}
       </Text>
     </Pressable>
   )
