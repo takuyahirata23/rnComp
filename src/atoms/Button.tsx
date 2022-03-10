@@ -33,7 +33,12 @@ export default function Button({
       isFocused={false}
       onPress={onPress}
     >
-      <Text color={textColor[variant]} fontWeight="bold" textAlign="center">
+      <Text
+        color={textColor[variant]}
+        fontWeight={700}
+        textAlign="center"
+        fontFamily="heading"
+      >
         {children}
       </Text>
     </Pressable>

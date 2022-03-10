@@ -21,6 +21,43 @@ const theme = {
       darkText: '#000000',
     },
   },
+  fontConfig: {
+    Roboto: {
+      100: {
+        normal: 'Roboto-Light',
+        italic: 'Roboto-LightItalic',
+      },
+      200: {
+        normal: 'Roboto-Light',
+        italic: 'Roboto-LightItalic',
+      },
+      300: {
+        normal: 'Roboto-Light',
+        italic: 'Roboto-LightItalic',
+      },
+      400: {
+        normal: 'Roboto-Regular',
+        italic: 'Roboto-Italic',
+      },
+      500: {
+        normal: 'Roboto-Medium',
+      },
+      600: {
+        normal: 'Roboto-Medium',
+        italic: 'Roboto-MediumItalic',
+      },
+    },
+    Oswald: {
+      700: {
+        normal: 'Oswald-Bold',
+      },
+    },
+  },
+  fonts: {
+    heading: 'Oswald',
+    body: 'Roboto',
+    mono: 'Roboto',
+  },
 }
 
 const a = 'click'
@@ -40,8 +77,13 @@ const App = () => {
     <NativeBaseProvider theme={theme}>
       <SafeAreaView style={backgroundStyle}>
         <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-        <Text underline>Yoooo</Text>
-        <Button text={text ? a : b} onPress={toggle} />
+        <Text fontFamily="heading" fontWeight="700">
+          Hello World
+        </Text>
+        <Text fontWeight={400} fontFamily="body">
+          Almost before we knew it, we had left the ground.
+        </Text>
+        <Button onPress={toggle}>{text ? a : b}</Button>
       </SafeAreaView>
     </NativeBaseProvider>
   )
